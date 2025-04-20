@@ -8,10 +8,10 @@
     * { margin:0; padding:0; box-sizing:border-box; }
     body { font-family:Arial,sans-serif; background:#f5f5f5; color:#333; }
     .top-bar { background:#6b2b91; padding:8px 20px; display:flex; justify-content:center; }
-    .top-bar img { height:30px; }
+    .top-bar img { height:40px; }
     .navbar { background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
     .nav-container { max-width:1000px; margin:auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; padding:10px 20px; }
-    .logo img { height:40px; }
+    .logo img { height:50px; }
     .nav-links { list-style:none; display:flex; flex-wrap:wrap; gap:20px; }
     .nav-links a { color:#666; font-weight:500; text-decoration:none; }
     .nav-links a.active, .nav-links a:hover { color:#d31919; }
@@ -29,4 +29,70 @@
     .social-icons a { margin-right:10px; display:inline-block; }
     .social-icons img { height:30px; width:30px; vertical-align:middle; }
     @media (max-width: 600px) {
-      .info span { width:100%; display:block; margin-bottom:4px
+      .info span { width:100%; display:block; margin-bottom:4px; }
+      .nav-container { flex-direction:column; align-items:flex-start; }
+      .nav-links { flex-direction:column; width:100%; gap:10px; margin-top:10px; }
+      .footer-container { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Saudi_Heart_Association_logo.png/300px-Saudi_Heart_Association_logo.png" alt="SHA Logo" />
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Saudi_Heart_Association_logo.png/300px-Saudi_Heart_Association_logo.png" alt="SHA Logo"/>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#" class="active">Certificate</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="card">
+      <h1>Certificate Verification</h1>
+      <ul class="info">
+        <li><span>Certificate Holder Name:</span> Waleed Rehman Musharraf Khan</li>
+        <li><span>Course Name:</span> SHA BLS Provider</li>
+        <li><span>Certificate Valid From:</span> 15‑Jan‑2025</li>
+        <li><span>Certificate Expiry Date:</span> 15‑Jan‑2027</li>
+      </ul>
+      <p class="verified">✅ This certificate is valid and verified.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p><a href="https://www.shacpr.org.sa" target="_blank">www.shacpr.org.sa</a></p>
+        <p><a href="mailto:info@shacpr.org.sa">info@shacpr.org.sa</a></p>
+        <p>+966 (11) 464 0800</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
