@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Certificate Verification</title>
   <style>
@@ -21,19 +21,23 @@
     .info { list-style:none; margin-top:20px; }
     .info li { margin-bottom:12px; }
     .info span { font-weight:bold; display:inline-block; width:160px; }
+    .verified { text-align:center; margin-top:20px; color:green; font-weight:bold; }
     footer { background:#333; color:#ccc; padding:20px 0; margin-top:40px; }
     .footer-container { max-width:1000px; margin:auto; display:flex; flex-wrap:wrap; gap:20px; padding:0 20px; }
     .footer-section h4 { color:#fff; margin-bottom:10px; }
     .footer-section p, .footer-section a { font-size:14px; color:#ccc; margin:3px 0; text-decoration:none; }
+    .social-icons img { height:24px; margin-right:10px; vertical-align:middle; }
   </style>
 </head>
 <body>
   <div class="top-bar">
-    <img src="logo.png" alt="SHA Logo"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Saudi_Heart_Association_Logo.png/200px-Saudi_Heart_Association_Logo.png" alt="Saudi Heart Association Logo"/>
   </div>
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo"><img src="logo.png" alt="SHA Logo"/></div>
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Saudi_Heart_Association_Logo.png/200px-Saudi_Heart_Association_Logo.png" alt="SHA Logo"/>
+      </div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">Courses</a></li>
@@ -46,27 +50,35 @@
     <div class="card">
       <h1>Certificate Verification</h1>
       <ul class="info">
-        <li><span>Certificate Holder Name:</span> Waleed Rehman Musharraf Khan</li>
-        <li><span>Course Name:</span> SHA BLS Provider</li>
+        <li><span>Certificate Holder Name:</span> Waleed Rehman Musharraf Khan</li>
+        <li><span>Course Name:</span> SHA BLS Provider</li>
         <li><span>Certificate Valid From:</span> 15‑Jan‑2025</li>
         <li><span>Certificate Expiry Date:</span> 15‑Jan‑2027</li>
       </ul>
+      <p class="verified">✅ This certificate is valid and verified.</p>
     </div>
   </main>
   <footer>
     <div class="footer-container">
       <div class="footer-section">
         <h4>Contact Us</h4>
-        <p>www.shacpr.org.sa</p>
-        <p>info@shacpr.org.sa</p>
+        <p><a href="https://www.shacpr.org.sa" target="_blank" rel="noopener noreferrer">www.shacpr.org.sa</a></p>
+        <p><a href="mailto:info@shacpr.org.sa">info@shacpr.org.sa</a></p>
         <p>+966 (11) 464 0800</p>
       </div>
       <div class="footer-section">
         <h4>Follow Us</h4>
-        <!-- Add your real social‑icon URLs -->
-        <a href="#"><img src="icon-facebook.png" alt="Facebook"/></a>
-        <a href="#"><img src="icon-twitter.png" alt="Twitter"/></a>
-        <a href="#"><img src="icon-instagram.png" alt="Instagram"/></a>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook Icon"/>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter Icon"/>
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"/>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
